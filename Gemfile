@@ -30,6 +30,8 @@ gem 'yelp', '~> 2.0.6'
 
 gem 'pry', '~> 0.10.1'
 
+gem 'rails_12factor', group: :production
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
