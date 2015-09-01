@@ -10,17 +10,21 @@ body{
   color: red;
 }
 /*FORM STYLES*/
-.signin_form{
-  width: 100%;
-}
+
 .login{
-  width: 50%;
+  width: 40%;
   display: inline-block;
+  border: 1px solid #111;
+  vertical-align: top;
+  margin-right:20px;
+  padding:20px;
 }
 
 .signup{
-  width:50%;
+  width:40%;
   display: inline-block;
+  border: 1px solid #111;
+  padding:20px;
 }
 
 .form_header h2{
@@ -35,15 +39,26 @@ body{
 .input {
   letter-spacing: 5px;
   padding: 22px;
-  width: 200px;
-  font-size: 30px;
+  margin:0 auto 18px auto;
+  width: 80%;
+  font-size: 20px;
   background-color: mediumaquamarine;
-  color: white ;
+  color: white;
   font-family: "Raleway", sans-serif;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
   text-transform: uppercase;
   display: block;
+  text-align:center;
+}
+
+.bottom_buttons{
+  width: 40%;
+  display: inline-block;
+  border: 1px solid #111;
+  vertical-align: top;
+  margin-right:20px;
+  padding:20px;
 }
 
 
@@ -73,6 +88,19 @@ body{
   font-family: "Raleway", sans-serif;
   border: none; 
 }
+
+.submit_button:hover {
+  color:mediumaquamarine; 
+}
+
+.login .submit_button{
+  margin-top:126px;
+  width: 88%;
+}
+.signup .submit_button{
+  width: 88%;
+}
+
 
 .select_box {
  padding: 2%;

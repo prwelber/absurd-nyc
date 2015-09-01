@@ -1,33 +1,28 @@
 <!-- /users -->
-<div class="signin_form">
-	<div class="login">
-		<div class="form_header">
-			<h2>LOG IN</h2>
-		</div>
-
-		<%= form_tag sessions_path do %>
-			<%= text_field_tag :username, nil, placeholder: "Username", class: "input" %>
-			<%= password_field_tag :password, nil, placeholder: "Password", class: "input" %>
-			<%= button_tag "LOG IN" %>
-		<% end %>
+<div class="login">
+	<div class="form_header">
+		<h2>LOG IN</h2>
 	</div>
 
-	<div class="signup">
-		<div class="form_header">
-			<h2>SIGN UP</h2>
-		</div>
-
-		<%= form_for @user do |f| %>
-			<%= f.text_field :username, placeholder: "Username", class: "input" %>
-			<%= f.password_field :password, placeholder: "Password", class: "input" %>
-			<%= f.password_field :password_confirmation, placeholder: "Confirm Password", class: "input" %>
-			<%= button_tag "SIGN UP" %>
-		<% end %>
-	</div>
+	<%= form_tag sessions_path do %>
+		<%= text_field_tag :username, nil, placeholder: "Username", class: "input" %>
+		<%= password_field_tag :password, nil, placeholder: "Password", class: "input" %>
+		<%= button_tag "LOG IN", class: "submit_button" %>
+	<% end %>
 </div>
 
+<div class="signup">
+	<div class="form_header">
+		<h2>SIGN UP</h2>
+	</div>
 
-
+	<%= form_for @user do |f| %>
+		<%= f.text_field :username, placeholder: "Username", class: "input" %>
+		<%= f.password_field :password, placeholder: "Password", class: "input" %>
+		<%= f.password_field :password_confirmation, placeholder: "Confirm Password", class: "input" %>
+		<%= button_tag "SIGN UP", class: "submit_button" %>
+	<% end %>
+</div>
 
 
 <p class='error-msg'><%= flash[:error] %></p>
