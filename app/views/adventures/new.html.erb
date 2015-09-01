@@ -1,0 +1,19 @@
+<div class="form_header">
+	<h2>CHOOSE A 'HOOD</h2>
+</div>
+
+<div>
+	<%= form_tag adventures_results_path, method: "get" do %>
+		<div>
+			<%= collection_select :stereotype, :id, Stereotype.all, :id, :neighborhood_name, {}, class: "drop_down" %>
+		</div>
+		<div>
+			<%= submit_tag "Submit", class: "submit_button" %>
+		</div>
+	<% end %>
+</div>
+
+
+<div class='loading-content'>
+	
+</div>

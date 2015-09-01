@@ -1,0 +1,301 @@
+body{
+	margin:0;
+	padding:0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #111;
+}
+
+.error-msg {
+  color: red;
+}
+/*FORM STYLES*/
+.signin_form{
+  width: 100%;
+}
+.login{
+  width: 50%;
+  display: inline-block;
+}
+
+.signup{
+  width:50%;
+  display: inline-block;
+}
+
+.form_header h2{
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 100px;
+  text-transform: uppercase;
+}
+
+.input {
+  letter-spacing: 5px;
+  padding: 22px;
+  width: 200px;
+  font-size: 30px;
+  background-color: mediumaquamarine;
+  color: white ;
+  font-family: "Raleway", sans-serif;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  text-transform: uppercase;
+  display: block;
+}
+
+
+/*NEW FORM STYLES*/
+.drop_down {
+    letter-spacing: 5px;
+    padding: 22px;
+    width: 500px;
+    font-size: 30px;
+    background-color: mediumaquamarine;
+    color: white ;
+    font-family: "Raleway", sans-serif;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    text-transform: uppercase;
+}
+
+.submit_button {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  padding: 22px;
+  width: 500px;
+  font-size: 30px;
+  background-color: #333;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  border: none; 
+}
+
+.select_box {
+ padding: 2%;
+}
+
+.heading_title {
+  font-size: 34px;
+}
+
+.header{
+	margin: 0 auto;
+	display: block;
+}
+
+.triangle_image{
+	width:600px;
+}
+
+.stereotype{
+	margin-bottom: 40px;
+}
+
+.stereotype h2{
+  	font-family: "Oswald", sans-serif;
+  	letter-spacing: 5px;
+  	font-size: 60px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h3 {
+	font-family: "cambria", "georgia", serif;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 3px; 
+    margin:0;
+}
+
+.stereotype span {
+	  font-family: "cambria", "georgia", serif;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin: 30px auto 25px auto;
+    display: block;
+    font-size: 1.5em;
+    width: 750px;
+    line-height: 1.6em;
+}
+
+section{
+  	margin-bottom:40px;
+  	width:100%;
+}
+
+section header{
+    width: 785px;
+    margin: 0 auto;
+}
+
+section header span {
+  	padding: 17px;
+  	font-family: "Raleway", sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+}
+
+.horizontal_line{
+	height: 1px;
+	width: 550px;
+	display: block;
+	margin: 0 auto;
+	border-top: 1px solid black;
+}
+
+.vertical_line{
+	height: 40px;
+	width: 1px;
+	display: block;
+	margin: 0 auto;
+	border-right: 1px solid black;
+}	
+
+.instagram {
+	display:inline-block;
+	width: 100%;
+}
+.insta-img {
+	width: 24%;
+	margin: 0 20px 0 20px;
+}
+
+.results{
+	position: relative;
+}
+.results h2{
+  	font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 60px;
+    font-weight: 400;
+    padding: 58px 10px 0 10px;
+    margin-bottom: 22px;
+}
+
+.full_bleed {
+	width:100%;
+}
+
+.flip_container{
+  perspective: 1000;
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.flip_container:hover .flipper, .flip_container.hover .flipper {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.white_box{
+  width: 450px;
+  height: 450px;
+  background-color: white;
+}
+
+.flipper{
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+
+}
+
+.front, .back{
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.back span{
+    padding: 70px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    text-align: left;
+    word-spacing: 5px;
+}
+
+.back h3{
+  text-align: left;
+  padding-left:70px;
+}
+
+.adventure_button {
+  margin: auto;
+  letter-spacing: 2px;
+  padding: 26px;
+  width: 37%;
+  position: relative;
+  font-size: 30px;
+  background-color: #454545;
+  color: #F2EEEE;
+  font-family: "Raleway", sans-serif;
+  border: none; 
+} 
+
+/*SAVED ADVENTURES PAGE*/
+.saved_adventure {
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  text-align: center;
+  padding-top: 20px;
+  margin: 20px 20px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.saved_header {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 60px;
+  font-weight: 400;    
+  margin: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 34px;
+}
+.saved_adventure h2 {
+  font-weight: 900;
+  padding-bottom: 15px;
+  font-size: 44px;
+}
+.saved_wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+    
+ 

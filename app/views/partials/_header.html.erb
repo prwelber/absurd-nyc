@@ -1,0 +1,12 @@
+<nav>
+	<%= link_to "Landing Page", root_path %>
+	<%= link_to "New Adventure", new_adventure_path %>
+
+	<% if session[:user_id] %>
+		<%= link_to "My Saved Adventures", user_adventures_path(session[:user_id]) %>
+		<%= link_to "Log Out", sessions_path, method: :delete %>
+	<% else %>
+		<%= link_to "Get InIt", login_path %>
+	<% end %>
+	<%= session[:user_id] %>
+</nav>
