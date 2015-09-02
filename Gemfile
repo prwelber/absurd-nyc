@@ -32,8 +32,6 @@ gem 'pry', '~> 0.10.1'
 
 gem 'rails_12factor', group: :production
 
-ruby '2.2.2'
-
 # Use Unicorn as the app server
 # gem 'unicorn'
 
