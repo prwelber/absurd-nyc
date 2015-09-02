@@ -97,6 +97,14 @@ class AdventuresController < ApplicationController
     
   end
 
+
+  def destroy
+    adventure = Adventure.find(params["adv_box_id"][:adventure_id])
+    # adventure.destroy
+    render json: params["adv_box_id"][:adventure_id]
+    # redirect_to user_adventures_path
+  end
+
   def saveadventure
     if session[:user_id].present? && session[:new_adventure].present?
       adventure = Adventure.create(session[:new_adventure])
@@ -111,6 +119,7 @@ class AdventuresController < ApplicationController
     else
       render json: 0
     end
+
   end
 
 end

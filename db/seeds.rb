@@ -87,5 +87,8 @@ Weekend.create({stereotype_id: 4, weekend_name: "camping in catskills", descript
 Weekend.create({stereotype_id: 4, weekend_name: "santacon", description: "bros love christmas", image: "/assets/04_bro/weekend_santacon.jpg", street: "where the streets have no name u2", city: "Herrrrrrr", state: "LA", zip: "12345"})
 
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 2703fe56e95ffd51712f9de15017807c896f0ce5
