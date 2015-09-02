@@ -8,7 +8,7 @@ Stereotype.create({stereotype_name: "tourist", neighborhood_name:"Times Square",
 Stereotype.create({stereotype_name: "brogrammer", neighborhood_name: "SoHo", tagline: "{ dude, bro, sweet algorithm }", job: "AFTER A LONG DAY OF POUNDING OUT SOME HELLA CODE", friends: "YOUR BROS. DUH." })
 
 # USERS
-User.create({username: "hipster man", password: "password"})
+User.create({username: "admin", password: "admin"})
 User.create({username: "sketchmaster", password: "password"})
 User.create({username: "FiestyBuns", password:"buns" })
 User.create({username:"PC", password:"qwerty"})
@@ -87,8 +87,14 @@ Weekend.create({stereotype_id: 4, weekend_name: "camping in catskills", descript
 Weekend.create({stereotype_id: 4, weekend_name: "santacon", description: "bros love christmas", image: "/assets/04_bro/weekend_santacon.jpg", street: "where the streets have no name u2", city: "Herrrrrrr", state: "LA", zip: "12345"})
 
 
-<<<<<<< HEAD
-=======
+Adventure.create({ user_id: 1, restaurant_id: 1, bar_id: 2, weekend_id: 2 })
+Adventure.create({ user_id: 1, restaurant_id: 2, bar_id: 1, weekend_id: 3 })
+Adventure.create({ user_id: 1, restaurant_id: 3, bar_id: 3, weekend_id: 1 })
+Adventure.create({ user_id: 1, restaurant_id: 1, bar_id: 3, weekend_id: 2 })
+Adventure.create({ user_id: 1, restaurant_id: 2, bar_id: 1, weekend_id: 3 })
+Adventure.create({ user_id: 1, restaurant_id: 3, bar_id: 2, weekend_id: 2 })
+Adventure.create({ user_id: 1, restaurant_id: 2, bar_id: 3, weekend_id: 1 })
+Adventure.create({ user_id: 1, restaurant_id: 2, bar_id: 1, weekend_id: 1 })
+Adventure.create({ user_id: 1, restaurant_id: 3, bar_id: 2, weekend_id: 1 })
+Adventure.create({ user_id: 1, restaurant_id: 1, bar_id: 3, weekend_id: 2 })
 
-
->>>>>>> 2703fe56e95ffd51712f9de15017807c896f0ce5
