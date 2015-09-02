@@ -97,6 +97,21 @@ class AdventuresController < ApplicationController
     
   end
 
+  def saveadventure
+    if session[:user_id].present? && session[:new_adventure].present?
+      adventure = Adventure.create(session[:new_adventure])
+      if adventure.save 
+        session.delete(:new_adventure)
+        render json: 1
+      else
+        render json: 0
+      end
+    elsif session[:user_id].present?
+      render json: 2
+    else
+      render json: 0
+    end
+  end
 
 end
 

@@ -51,11 +51,20 @@ a{
 
 a:visited{
   color: mediumaquamarine;
-/*FORM STYLES*/
 }
-/*.signin_form{
-  width: 100%;
-}*/
+
+ul{
+  list-style: none;
+  -webkit-padding-start: 0;
+  margin: 58px 0 20px 0;
+}
+
+li{
+  line-height: 28px;
+}
+
+
+/*FORM STYLES*/
 .login{
   width: 50%;
   display: inline-block;
@@ -71,8 +80,13 @@ a:hover{
 }
 
 /*PC STYLES*/
-.error-msg {
-  color: red;
+h4 {
+  color: mediumaquamarine;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 /*FORM STYLES*/
@@ -154,6 +168,10 @@ a:hover{
   text-align:center;
 }
 
+ ::-webkit-input-placeholder{
+  color:white;
+ }
+
 .login .submit_button{
   margin-top:126px;
   width: 88%;
@@ -176,7 +194,6 @@ a:hover{
   display: inline-block;
   box-sizing: content-box;
 }
-  
 
 /*RESULTS PAGE*/
 .triangle_image{
@@ -361,36 +378,73 @@ footer p{
 }
 
 /*SAVED ADVENTURES PAGE*/
-.saved_adventure {
-  height: 300px;
-  width: 300px;
-  border: 2px solid black;
-  text-align: center;
-  padding-top: 20px;
-  margin: 20px 20px 20px 20px;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-.saved_header {
-  text-align: center;
-  letter-spacing: 5px;
-  font-size: 60px;
-  font-weight: 400;    
-  margin: 0;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  font-size: 34px;
-}
-.saved_adventure h2 {
-  font-weight: 900;
-  padding-bottom: 15px;
-  font-size: 44px;
-}
 .saved_wrapper {
   width: 1000px;
   margin: 0 auto;
 }
-    
+.saved_adventure {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #111;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "raleway", sans-serif;
+}
+
+.saved_adventure h2 {
+  margin: 35px 0 10px 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.saved_adventure:hover{
+  background-color: mediumaquamarine; 
+}
+
+.saved_adventure a {
+  color:#111;
+}
+
+.saved_adventure a:hover {
+  color:white;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 970px){
+  .bottom_buttons{
+    margin-bottom: 20px;
+  }  
+}
+
+@media (max-width: 800px){
+  .flip_container{
+    width: 350px;
+    height: 350px;
+  }
+
+  .white_box{
+    width: 350px;
+    height:350px;
+  }
+
+  .full_bleed{
+    height: 400px
+  }
+
+  .results h2{
+    font-size: 40px;
+  }
+  section header{
+    width: 100%;
+  }
+
+  .horizontal_line{
+    width: 90%;
+  }
+}
+  
  

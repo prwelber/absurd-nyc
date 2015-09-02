@@ -129,13 +129,13 @@
 		</div>
 	</main>
 </section>
-
+<div class='message'></div>
 <div class="bottom_buttons">
 	<%= link_to "CHOOSE NEW ADVENTURE", new_adventure_path, class: "submit_button" %>
 </div>
 
 <div class="bottom_buttons">
-	<%= form_tag adventures_path, method:"POST" do %>
-		<%= button_tag "SAVE ADVENTURE", class: "submit_button" %>
+	<%= form_tag saveadventure_path, method:"POST" do %>
+		<%= button_tag "SAVE ADVENTURE", class: "save_button submit_button" %>
 	<% end %>
 </div>
