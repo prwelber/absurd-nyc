@@ -15,20 +15,35 @@
 		<div class="vertical_line"></div>
 	</header>
 	<main class="results">
-		<img class="full_bleed" src="/assets/01_hipster/restaurant_01.jpg">
+		<img class="full_bleed" src="/assets/01_hipster/restaurant_fette_sau.jpg">
 		<div class="flip_container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
 				<div class="front white_box">
-					<h2>Union Square Tavern</h2>
-					<h3>a snappy new plave to eat</h3>
+					<div class="magical_vertical_align">
+						<h2>Union Square Tavern</h2>
+						<h3>a snappy new plave to eat</h3>
+					</div>
 				</div>
 				<div class="back white_box">
-						<span>"MY FRIEND AND I CAME ON A TUESDAY, NOON, BARELY ANY PEOPLE BUT IT WAS GOOD, BECAUSE I THOUGHT IT WOULD BE CRAWLING WITH PEOPLE. MAYBE AT NIGHT? ANYWAY, WE...  
-"<a href="">READ MORE</a></span>
+					<div class="magical_vertical_align">
+						<span>"MY FRIEND AND I CAME ON A TUESDAY, NOON, BARELY ANY PEOPLE BUT IT WAS GOOD, BECAUSE I THOUGHT IT WOULD BE CRAWLING WITH PEOPLE. MAYBE AT NIGHT? ANYWAY, WE..."<a href="">READ MORE</a></span>
 						
 						<h3>684 Lorimer St.<br>Williamsburg</h3>
+					<div>
 				</div>
 			</div>
 		</div>
 	</main>
 </section>
+
+
+<div class="bottom_buttons">
+	<%= link_to "CHOOSE NEW ADVENTURE", new_adventure_path, class: "submit_button" %>
+</div>
+
+<div class="bottom_buttons">
+	<%= form_tag adventures_path, method:"POST" do %>
+		<%= button_tag "SAVE", class: "submit_button" %>
+	<% end %>
+</div>
+

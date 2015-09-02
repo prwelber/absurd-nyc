@@ -1,5 +1,4 @@
 require 'pry'
-require 'httparty'
 
 class AdventuresController < ApplicationController
 
@@ -17,7 +16,6 @@ class AdventuresController < ApplicationController
     if session[:user_id]
       @adventures = Adventure.where(user_id:session[:user_id])
     else
-
       flash[:error] = "Where are you going?"
       redirect_to login_path
     end
@@ -39,7 +37,6 @@ class AdventuresController < ApplicationController
     else
       flash[:error] = "Gotta log in first if you wanna save"
       redirect_to login_path
-      
     end
   end
 
@@ -80,6 +77,7 @@ class AdventuresController < ApplicationController
       my_instagram_url = 'https://api.instagram.com/v1/tags/investmentbanking/media/recent?client_id='+ENV["instagram_api"]  
     end
     puts Time.now.to_s + " about to go to instagram: " + my_instagram_url
+
 ################### DONT MESS WITH PC'S CODE  ##############################
     @res = HTTParty.get(my_instagram_url)['data'].sample(3)
     

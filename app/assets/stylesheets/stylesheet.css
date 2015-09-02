@@ -5,12 +5,123 @@ body{
   font-family: "Raleway", sans-serif;
   color: #111;
 }
+/*HEADER STYLES (html is in partials _header.html)*/
+#main_header{
+  height:50px;
+}
 
+header h1{
+  position: absolute;
+  left: 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0;
+  padding:7px 0 0 31px;
+}
+#main_header a{
+  text-decoration: none;
+  color: #111;
+}
+
+#main_header a:visited{
+  color: #111;
+}
+
+#main_header a:hover{
+  color: mediumaquamarine;
+}
+
+header nav{
+  position: absolute;
+    right: 0;
+    padding: 14px 31px 0 0px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 2px;
+    font-size: .9em;
+}
+
+/*REGULAR LINK STYLES*/
+
+a{
+  text-decoration: none;
+  color: mediumaquamarine;
+}
+
+a:visited{
+  color: mediumaquamarine;
+/*FORM STYLES*/
+}
+/*.signin_form{
+  width: 100%;
+}*/
+.login{
+  width: 50%;
+  display: inline-block;
+}
+
+.signup{
+  width:50%;
+  display: inline-block;
+}
+
+a:hover{
+  color: #111;
+}
+
+/*PC STYLES*/
 .error-msg {
   color: red;
 }
+
 /*FORM STYLES*/
 
+.form_header h2{
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 100px;
+  text-transform: uppercase;
+}
+
+.submit_button {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  padding: 22px;
+  width: 500px;
+  font-size: 30px;
+  background-color: #333;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  border: none; 
+}
+
+.submit_button:visited {
+  color:white; 
+}
+
+.submit_button:hover {
+  color:mediumaquamarine; 
+}
+
+/*choose adventure form*/
+.drop_down {
+    letter-spacing: 5px;
+    padding: 22px;
+    width: 500px;
+    font-size: 30px;
+    background-color: mediumaquamarine;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    text-transform: uppercase;
+}
+
+/*signup-login form*/
 .login{
   width: 40%;
   display: inline-block;
@@ -25,15 +136,6 @@ body{
   display: inline-block;
   border: 1px solid #111;
   padding:20px;
-}
-
-.form_header h2{
-  font-family: "Oswald", sans-serif;
-  letter-spacing: 5px;
-  font-size: 60px;
-  font-weight: 400;
-  margin: 100px;
-  text-transform: uppercase;
 }
 
 .input {
@@ -52,47 +154,6 @@ body{
   text-align:center;
 }
 
-.bottom_buttons{
-  width: 40%;
-  display: inline-block;
-  border: 1px solid #111;
-  vertical-align: top;
-  margin-right:20px;
-  padding:20px;
-}
-
-
-/*NEW FORM STYLES*/
-.drop_down {
-    letter-spacing: 5px;
-    padding: 22px;
-    width: 500px;
-    font-size: 30px;
-    background-color: mediumaquamarine;
-    color: white ;
-    font-family: "Raleway", sans-serif;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0px;
-    text-transform: uppercase;
-}
-
-.submit_button {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-top: 35px;
-  padding: 22px;
-  width: 500px;
-  font-size: 30px;
-  background-color: #333;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  border: none; 
-}
-
-.submit_button:hover {
-  color:mediumaquamarine; 
-}
-
 .login .submit_button{
   margin-top:126px;
   width: 88%;
@@ -101,20 +162,23 @@ body{
   width: 88%;
 }
 
-
-.select_box {
- padding: 2%;
+/*results page buttons*/
+.bottom_buttons{
+  display: inline-block;
+  margin-right: 20px;
 }
 
-.heading_title {
-  font-size: 34px;
+.bottom_buttons .submit_button {
+  padding: 32px;
+  font-size: 20px;
+  width:400px;
+  margin-top: 0;
+  display: inline-block;
+  box-sizing: content-box;
 }
+  
 
-.header{
-	margin: 0 auto;
-	display: block;
-}
-
+/*RESULTS PAGE*/
 .triangle_image{
 	width:600px;
 }
@@ -205,14 +269,13 @@ section header span {
     letter-spacing: 5px;
     font-size: 60px;
     font-weight: 400;
-    padding: 58px 10px 0 10px;
-    margin-bottom: 22px;
+    margin:0 0 22px 0;
 }
 
 .full_bleed {
 	width:100%;
 }
-
+/*animation on white boxes*/
 .flip_container{
   perspective: 1000;
   position: absolute;
@@ -235,12 +298,18 @@ section header span {
   background-color: white;
 }
 
+.magical_vertical_align{
+  padding: 0 15px 0 15px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+}
+
 .flipper{
     transition: 0.8s;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     position: relative;
-
 }
 
 .front, .back{
@@ -249,7 +318,6 @@ section header span {
   position: absolute;
   top: 0;
   left: 0;
-  
 }
 
 .front {
@@ -262,36 +330,35 @@ section header span {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
+/*end of animation on white boxes stuff*/
 
 .back span{
-    padding: 70px;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     letter-spacing: 1px;
     font-size: 20px;
-    font-weight: 400;
-    display: block;
-    text-align: left;
     word-spacing: 5px;
 }
 
 .back h3{
-  text-align: left;
-  padding-left:70px;
+  padding-top:50px;
 }
 
-.adventure_button {
-  margin: auto;
-  letter-spacing: 2px;
-  padding: 26px;
-  width: 37%;
-  position: relative;
-  font-size: 30px;
-  background-color: #454545;
-  color: #F2EEEE;
-  font-family: "Raleway", sans-serif;
-  border: none; 
-} 
+/*FOOTER STYLES (html is on app layout)*/
+footer{
+  width:100%;
+  background-color: rgba(118, 238, 198,.4); 
+  margin-top: 50px;
+}
+
+footer div{
+  padding:30px 0 10px 0;
+}
+
+footer p{
+  font-size: .8em;
+  padding-top:11px;
+}
 
 /*SAVED ADVENTURES PAGE*/
 .saved_adventure {

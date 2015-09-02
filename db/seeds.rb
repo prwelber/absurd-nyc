@@ -18,7 +18,7 @@ User.create({username:"PC", password:"qwerty"})
 Bar.create({stereotype_id: 1, bar_name: "Night of Joy", description: "bespoke drunkenness", image: "/assets/01_hipster/bar_night_of_joy.jpg", review: "asdfadsf", display_address: "adf", url: "" })
 Bar.create({stereotype_id: 1, bar_name: "McCarren Hotel and Pool", description: "must know door guy", image: "/assets/01_hipster/bar_mccarren_hotel_pool.jpg", review: "asdfadsf", display_address: "adf", url: "" })
 Bar.create({stereotype_id: 1, bar_name: "No Name", description: "it's cool to not have a name", image: "/assets/01_hipster/bar_no_name.jpg", review: "asdfadsf", display_address: "adf", url: ""})
-Bar.create({stereotype_id: 1, bar_name: "union pool", description: "not an actual pool", image: "/assets/01_hipster/bar_union_pool.jpg", review: "asdfadsf", display_address: "adf", url: ""})
+Bar.create({stereotype_id: 1, bar_name: "union pool", description: "not an actual pool", image: "/assets/01_hipster/bar_unio_pool.jpg", review: "asdfadsf", display_address: "adf", url: ""})
 Bar.create({stereotype_id: 1, bar_name: "wythe hotel", description: "for brooklyn's most beautiful", image: "/assets/01_hipster/bar_wythe_01.jpg", review: "asdfadsf", display_address: "adf", url: ""})
 Bar.create({stereotype_id: 1, bar_name: "mission dolores", description: "worth biking to park slope for", image: "/assets/01_hipster/bar_mission_dolores.jpg", review: "asdfadsf", display_address: "adf", url: ""})
 

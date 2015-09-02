@@ -35,20 +35,22 @@
 		<div class="flip_container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
 				<div class="front white_box">
-					
-					<h2><%=@restaurant.restaurant_name%></h2>
-					<h3><%=@restaurant.description%></h3>
-				
+					<div class="magical_vertical_align">
+						<h2><%=@restaurant.restaurant_name%></h2>
+						<h3><%=@restaurant.description%></h3>
+					</div>
 				</div>
 				<div class="back white_box">
-					<span>
-						"<%=@restaurant_data.businesses.first.snippet_text[0..100]%>..."
-						<a href="<%=@restaurant_data.businesses.first.url%>" target="_blank">READ MORE</a>
-					</span>
-					<h3>
-						<%=@restaurant_data.businesses.first.location.display_address[0]%><br>
-						<%=@restaurant_data.businesses.first.location.display_address[1]%>
-					</h3>
+					<div class="magical_vertical_align">
+						<span>
+							"<%=@restaurant_data.businesses.first.snippet_text[0..100]%>..."
+							<a href="<%=@restaurant_data.businesses.first.url%>" target="_blank">READ MORE</a>
+						</span>
+						<h3>
+							<%=@restaurant_data.businesses.first.location.display_address[0]%><br>
+							<%=@restaurant_data.businesses.first.location.display_address[1]%>
+						</h3>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -67,18 +69,22 @@
 		<div class="flip_container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
 				<div class="front white_box">
-					<h2><%=@bar.bar_name%></h2>
-					<h3><%=@bar.description%></h3>
+					<div class="magical_vertical_align">
+						<h2><%=@bar.bar_name%></h2>
+						<h3><%=@bar.description%></h3>
+					</div>
 				</div>
 				<div class="back white_box">
-					<span>
-						"<%=@bar_data.businesses.first.snippet_text[0..100]%>..."
-						<a href="<%=@bar_data.businesses.first.url%>" target="_blank">READ MORE</a>
-					</span>
-					<h3>
-						<%=@bar_data.businesses.first.location.display_address[0]%><br>
-						<%=@bar_data.businesses.first.location.display_address[1]%>
-					</h3>
+					<div class="magical_vertical_align">
+						<span>
+							"<%=@bar_data.businesses.first.snippet_text[0..100]%>..."
+							<a href="<%=@bar_data.businesses.first.url%>" target="_blank">READ MORE</a>
+						</span>
+						<h3>
+							<%=@bar_data.businesses.first.location.display_address[0]%><br>
+							<%=@bar_data.businesses.first.location.display_address[1]%>
+						</h3>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -97,11 +103,13 @@
 		<div class="flip_container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
 				<div class="front white_box">
-					<h2><%=@weekend.weekend_name%></h2>
-					<h3><%=@weekend.description%></h3>
+					<div class="magical_vertical_align">
+						<h2><%=@weekend.weekend_name%></h2>
+						<h3><%=@weekend.description%></h3>
+					</div>
 				</div>
 				<div class="back white_box">
-					
+					<div class="magical_vertical_align">
 						<%if @stereotype.stereotype_name == "hipster" %>
 								<span>"...I mean, if I actually wake up in time I'll totally do this. I'm so down."</span>
 								<h3>Somewhere in Brooklyn</h3>
@@ -115,6 +123,7 @@
 								<span>"...Are there gonna be hot chicks there?"</span>
 								<h3>Anywhere Beer is Served</h3>
 						<%end%>	
+					</div>
 				</div>
 			</div>
 		</div>
@@ -127,8 +136,6 @@
 
 <div class="bottom_buttons">
 	<%= form_tag adventures_path, method:"POST" do %>
-		<%= button_tag "SAVE", class: "submit_button" %>
+		<%= button_tag "SAVE ADVENTURE", class: "submit_button" %>
 	<% end %>
 </div>
-
-
