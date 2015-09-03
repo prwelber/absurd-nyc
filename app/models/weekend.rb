@@ -1,4 +1,4 @@
 class Weekend < ActiveRecord::Base
-  belongs_to :stereotype
+    belongs_to :stereotype
     has_many :adventures
 end
