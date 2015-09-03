@@ -1,6 +1,9 @@
 $(document).ready(function() {
 	$('.submit_button').click(function() {
-		$('.loading-content').append("<img src='http://i.kinja-img.com/gawker-media/image/upload/ex9sgvlnuxlxicocpri4.gif'>")
+		// AT&T GIF
+		$('.loading-content').html("<img src='http://i.kinja-img.com/gawker-media/image/upload/ex9sgvlnuxlxicocpri4.gif'>")
+		// AWESOME CAT GIF
+		// $('.loading-content').html("<img src='http://static.tumblr.com/b96d05500523227c6fab41adcbadecab/y0n7dse/sCenragt8/tumblr_static_d9b0oip3jm04coc0ook80w040.gif'>")
 	})
 	$('.save_button').click(function(e) {
 		e.preventDefault();
